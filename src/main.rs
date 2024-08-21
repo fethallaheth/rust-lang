@@ -309,17 +309,302 @@
 
 
 
-fn main () {
-      let  string_one = String::from("hello");
-      let  string_two = String::from(" World !");
-      let result = concatenate_strings(&string_one, &string_two);
-      println!("the result is {}", result);
-}
+// fn main () {
+//       let  string_one = String::from("hello");
+//       let  string_two = String::from(" World !");
+// 
+   //   let result = concatenate_strings(&string_one, &string_two);
+//       println!("the result is {}", result);
+// }
 
-fn concatenate_strings(s1: &str, s2: &str) -> String {
-      let result = s1.to_owned() + s2; 
-      return result; 
-}
+// fn concatenate_strings(s1: &str, s2: &str) -> String {
+//       let result = s1.to_owned() + s2; 
+//       return result; 
+// // }
+// #[derive(Debug)]
+// struct Book {
+//     title: String,
+//     author: String,
+//     pages: u32
+// }
+
+// fn main() {
+
+//     let book = Book {
+//         title: String::from("the law of attraction"),
+//         author: String::from("manini"),
+//         pages: 204
+//     };
+
+//     println!("{:?}",      get_book_info(book));
+//     let book_two = create_book(String::from("catch the bug"), String::from("alisdov"), 231);
+//     println!("{:?}", book_two);
+// }
+
+// fn get_book_info(book : Book) -> [String; 3] {
+//     let title  = book.title;
+//     let author = book.author;
+//     let pages = book.pages;
+
+//     let data =  [title, author, pages.to_string()];
+//     return data; 
+// }
+// fn create_book(title: String, author: String, pages: u32) -> Book {
+//     let title = title;
+//     let author = author;
+//     let pages = pages;
+//     let book = Book {
+//         title,
+//         author,
+//         pages
+//     };
+//     return book;
+// }
+
+
+// struct Rectangle {
+//     width: u32,
+//     height: u32,
+// }
+
+// impl Rectangle {
+//     // Method to calculate the area of the rectangle
+//     fn area(&self) -> u32 {
+//         self.width * self.height
+//     }
+
+//     // Associated function (not tied to an instance)
+//     fn new(width: u32, height: u32) -> Self {
+//         Self { width, height }
+//     }
+// }
+
+// fn main() {
+//     let rect = Rectangle::new(30, 50);
+//     println!("The area of the rectangle is {} square pixels.", rect.area());
+// }
+
+// use std::os::windows::process;
+
+
+// #[derive(Debug)]
+// enum Wheather {
+//     Sunny,
+//     Cloudy,
+//     Rainy,
+//     Snowy,
+//     Windy
+// }
+
+// enum Message {
+//     Quit,
+//     Move {x: i32, y: i32},
+//     Write (String),
+//     ChangeColor(i32, i32, i32)
+// }
+
+// fn main() {
+//      let message = Message::Write(String::from("hello world")); 
+//      let message_two = Message::ChangeColor(32, 11, 2332);
+//      process_message(message_two);
+//     }
+
+// fn process_message(msg: Message) {
+//     match msg {
+//         Message::Quit =>{
+//             println!("Quit message");
+//         } 
+//         Message::Move { x, y } => {
+//             println!("Move to ({} {})", x, y);
+//         }
+//         Message::Write(text) => {
+//             println!("Written message: {}", text);
+//         }
+//         Message::ChangeColor( r, g ,b ) => {
+//             println!("the color is ({} {} {})", r,g,b);
+//         }
+//     }
+// }
+
+// fn main() {
+//     let x = 4.0;
+//     let square_root = find_square_root(x);
+ 
+//     match square_root {
+//         Some(root) => {
+//             println!("The square root of {} is {} ", x, root);
+//         }
+//         None => println!("the square of negative number is not defined")
+//     }
+
+//     let power_root: Option<f64> = find_power_root(x); 
+
+//     match power_root {
+//         Some(root) => {
+//             println!("the power of {} is {}", x, root);
+//         } 
+//         None => print!("the power of 0 is 0")
+//     }
+// }
+// fn find_square_root(number: f64) -> Option<f64> {
+//     if number >= 0.0 {
+//         Some(number.sqrt())
+//     } else {
+//         None
+//     }
+// }
+
+// fn find_power_root(number: f64) -> Option<f64> {
+//     if number == 0.0 {
+//         None
+//     } else  {
+//         Some(number.powf(2.0))
+//     } 
+// }
+
+use std::vec;
+
+
+
+fn main () {
+
+    let _numbers = vec![1, 2, 3, 4];
+    let mut names : Vec<String>  = Vec::new();
+
+    names.push(String::from("fethallah")); // [fethallah]
+    names.push(String::from("imad")); // [fethallah, imad]
+
+    println!("the winners are {}", names[0]);
+    
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
