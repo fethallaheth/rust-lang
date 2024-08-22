@@ -462,24 +462,29 @@
 //     } 
 // }
 
-use std::vec;
+// use std::vec;
 
 
 
-fn main () {
+// fn main () {
 
-    let _numbers = vec![1, 2, 3, 4];
-    let mut names : Vec<String>  = Vec::new();
+//     let _numbers = vec![1, 2, 3, 4];
+//     let mut names : Vec<String>  = Vec::new();
 
-    names.push(String::from("fethallah")); // [fethallah]
-    names.push(String::from("imad")); // [fethallah, imad]
+//     names.push(String::from("fethallah")); // [fethallah]
+//     names.push(String::from("imad")); // [fethallah, imad]
 
-    println!("the winners are {}", names[0]);
+//     println!("the winners are {}", names[0]);
     
 
-} 
+// } 
 
+use::std::collections::HashMap;
+fn main() {
+      let mut scores = HashMap::new();
 
+      scores.insert(String::from("ali"), 19);
+}
 
 
 
